@@ -1,2 +1,0 @@
-# dini
-website pesan yuk!
