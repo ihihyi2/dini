@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Yuk! </title>
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Lingking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h3 class="logo-text">👩🏻‍🍳Pesan Yuk! </h3>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+
+                <li class="nav-item">
+                    <a href="#hero-section" class="nav-link">Rumah</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about-section" class="nav-link">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#stores" class="nav-link">Toko</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials-section" class="nav-link">Testimoni</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact-section" class="nav-link">Kontak</a>
+                </li>
+            </ul>
+
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section class="hero-section" id="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                <h2 class="title">Selamat Datang</h2>
+                <h3 class="subtitle">Buat Harimu Menyenangkan dengan menu kesukaan kamu!</h3>
+                <p class="description">Temukan hidangan yang mengenyangkan perut anda, 
+                    sehingga setiap pesanan membuat waktu istirahat yang lebih berharga.</p>
+                        
+                    <div class="buttons">
+                        <a href="#stores" class="button order-now">Order Sekarang!</a>
+                        <a href="#contact-section" class="button contact-us">Hubungi Kami</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                  <img src="geprek.jpg" alt="Hero" 
+                  class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+         <section class="about-section" id="about-section">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="anya.png" alt="About" class="about-image">
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">Tentang Kami</h2>
+                    <p class="text">Website Pesan Yuk! ini dirancang untuk dapat memberikan manfaat dari permasalahan yang dialami siswa.
+                        Melalui keluhan mengenai mengantri yang terlalu lama hingga akhirnya kehabisan makanan, melalui website ini diharapkan 
+                        memberikan dampak positif yang bisa dirasakan.
+                    </p>
+                    <div class="social-link-list">
+                        <a href="https://www.instagram.com/chizz.snack/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+
+        <!-- Stores Section -->
+        <section class="stores" id="stores">
+            <div class="container">
+                <h2 class="section-title">Pilih Toko Favorit Anda</h2>
+                <div class="stores-grid">
+                    <div class="store-card" data-store="Makanan satu">
+                        <div class="store-icon">
+                            <img src="kantin kuning.png" alt="">
+                        </div>
+                        <h3>Kantin Kuning</h3>
+                        <p>Ayam Geprek, Spaghetti Bolognese, Ayam Suwir</p>
+                        <span class="store-type">Makanan  
+                            <i class="fas fa-bowl-food"></i> 
+                        </span>
+                    </div>
+
+                    <div class="store-card" data-store="Minuman satu">
+                        <div class="store-icon">
+                            <img src="kantin kak ully.png" alt="">
+                        </div>
+                        <h3>Kantin Sehat Ulhy</h3>
+                        <p>Es Teh, Lemon Ice, Alpukat</p>
+                        <span class="store-type">Minuman  <i class="fas fa-cocktail"></i></span>
+                    </div>
+
+                    <div class="store-card" data-store="Makanan dua">
+                        <div class="store-icon">
+                            <img src="kantin dinda-dindi.png" alt="">
+                        </div>
+                        <h3>Kantin Dindadindi</h3>
+                        <p>Nasi Goreng, Nasi Kuning, Nasi Uduk</p>
+                        <span class="store-type">Makanan  <i class="fas fa-bowl-food"></i></span>
+                    </div>
+
+                    <div class="store-card" data-store="Minuman dua">
+                        <div class="store-icon">
+                            <img src="Kantin kak ocin.png" alt="">
+                        </div>
+                        <h3>Kantin Ocin</h3>
+                        <p>Thai Tea, Milo, Cincau</p>
+                        <span class="store-type">Minuman  <i class="fas fa-cocktail"></i></span>
+                    </div>
+
+                    <div class="store-card" data-store="Makanan tiga">
+                        <div class="store-icon">
+                            <img src="kantin Rahma.png" alt="">
+                        </div>
+                        <h3>Kantin Rahma</h3>
+                        <p>Pisang goreng, Batagor, Tahu goreng </p>
+                        <span class="store-type">Makanan  <i class="fas fa-drumstick-bite"></i></span>
+                    </div>
+
+                    <div class="store-card" data-store="Minuman tiga">
+                        <div class="store-icon">
+                            <img src="kantin Haus.png" alt="">
+                        </div>
+                        <h3>Kantin Haus</h3>
+                        <p>Full cream coklat, Matcha, Full cream vanilla</p>
+                        <span class="store-type">Minuman  <i class="fas fa-cocktail"></i></span>
+                    </div>
+
+                    <div class="store-card" data-store="Minuman empat">
+                        <div class="store-icon">
+                            <img src="kantin segar.png" alt="">
+                        </div>
+                        <h3>Kantin Segar</h3>
+                        <p>Jus mangga, Milkshake, Jus Jeruk</p>
+                        <span class="store-type">Minuman  <i class="fas fa-cocktail"></i></span>
+                    </div>
+
+                    <div class="store-card" data-store="Makanan empat">
+                        <div class="store-icon">
+                            <img src="kantin Gurih.png" alt="">
+                        </div>
+                        <h3>Kantin Gurih</h3>
+                        <p>Mie Ayam, Beef yakiniku, Mie kuah</p>
+                        <span class="store-type">Makanan  <i class="fas fa-drumstick-bite"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Store Detail Modal -->
+        <div id="store-modal" class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Menu Toko Kantin Kuning</h2>
+                <span class="close" data-close-modal="store" style="cursor:pointer;">&times;</span>
+            </div>
+
+            <div class="modal-body">
+                <div class="menu-item">
+                    <label>
+                        <input type="checkbox" class="menu-checkbox" data-price="15000">
+                        Ayam Geprek
+                    </label>
+                    <span class="price">Rp 15.000</span>
+                </div>
+                <div class="menu-item">
+                    <label>
+                        <input type="checkbox" class="menu-checkbox" data-price="15000">
+                        Spaghetti Bolognese
+                    </label>
+                    <span class="price">Rp 15.000</span>
+                </div>
+                <div class="menu-item">
+                    <label>
+                        <input type="checkbox" class="menu-checkbox" data-price="15000">
+                        Ayam Suwir
+                    </label>
+                    <span class="price">Rp 15.000</span>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="cart-summary">
+                    <span>Total: Rp <span id="cart-total">0</span></span>
+                    <div id="buyer-info" style="margin-top: 15px;"></div>
+                    <button id="checkout-btn" class="btn btn-primary">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+const storesData = {
+  "Kantin Kuning": {
+    phone: "6281346495178",
+    qris: "bayarkuning.jpg",
+    menu: [
+      { name: "Ayam Geprek", price: 15000 },
+      { name: "Spaghetti Bolognese", price: 15000 },
+      { name: "Ayam Suwir", price: 15000 },
+    ]
+  },
+  "Kantin Sehat Ulhy": {
+    phone: "6281346495178",
+    qris: "bayarkuning.jpg",
+    menu: [
+      { name: "Es Teh", price: 8000 },
+      { name: "Lemon Ice", price: 10000 },
+      { name: "Alpukat", price: 10000 },
+    ]
+  },
+    "Kantin Dindadindi": {
+    phone: "6282196885624",
+    qris: "bayarkuning.jpg",
+    menu: [
+        { name: "Nasi Goreng", price: 15000 },
+        { name: "Nasi Kuning", price: 15000 },
+        { name: "Nasi Uduk", price: 15000 },
+    ]
+  },
+    "Kantin Ocin": {
+    phone: "bayarkuning.jpg",
+    qris: "qris-ully.png",
+    menu: [
+        { name: "Thai Tea", price: 10000 },
+        { name: "Milo", price: 10000 },
+        { name: "Cincau", price: 5000 },
+    ]
+  },
+  "Kantin Rahma": {
+    phone: "6282196885624",
+    qris: "bayarkuning.jpg",
+    menu: [
+        { name: "Pisang Goreng", price: 2000 },
+        { name: "Batagor", price: 5000 },
+        { name: "Tahu Goreng", price: 2000 },
+    ]
+  },
+    "Kantin Haus": {
+    phone: "6282196885624",
+    qris: "bayarkuning.jpg",
+    menu: [
+        { name: "Full Cream Coklat", price: 10000 },
+        { name: "Matcha", price: 10000 },
+        { name: "Full Cream Vanilla", price: 10000 },
+    ]
+  },
+    "Kantin Segar": {
+    phone: "6282196885624",
+    qris: "bayarkuning.jpg",
+    menu: [
+        { name: "Jus Mangga", price: 15000 },
+        { name: "Milkshake", price: 15000 },
+        { name: "Jus Jeruk", price: 10000 },
+    ]
+  },
+    "Kantin Gurih": {
+    phone: "6282196885624",
+    qris: "bayarkuningjpg",
+    menu: [
+        { name: "Mie Ayam", price: 15000 },
+        { name: "Beef Yakiniku", price: 15000 },
+        { name: "Mie Kuah", price: 15000 },
+    ]
+  },
+};
+
+const storeCards = document.querySelectorAll(".store-card");
+const modal = document.getElementById("store-modal");
+const modalTitle = document.getElementById("modal-title");
+const modalBody = modal.querySelector(".modal-body");
+const cartTotal = document.getElementById("cart-total");
+const checkoutBtn = document.getElementById("checkout-btn");
+let currentStore = null;
+
+// klik toko => buka modal
+storeCards.forEach(card => {
+  card.addEventListener("click", () => {
+    const storeName = card.querySelector("h3").textContent.trim();
+    currentStore = storesData[storeName];
+    modalTitle.textContent = `Menu ${storeName}`;
+    modalBody.innerHTML = "";
+
+    // tampilkan QRIS toko
+    const qrisImg = document.createElement("img");
+    qrisImg.src = currentStore.qris;
+    qrisImg.alt = "Kode QRIS";
+    qrisImg.style = "width:200px; display:block; margin:10px auto;";
+    modalBody.appendChild(qrisImg);
+
+    // tampilkan menu
+    currentStore.menu.forEach(item => {
+      const div = document.createElement("div");
+      div.classList.add("menu-item");
+      div.innerHTML = `
+        <label>
+          <input type="checkbox" class="menu-checkbox" data-price="${item.price}" data-name="${item.name}">
+          ${item.name}
+        </label>
+        <span class="price">Rp ${item.price.toLocaleString("id-ID")}</span>
+      `;
+      modalBody.appendChild(div);
+    });
+
+    // form identitas pembeli
+    const formDiv = document.createElement("div");
+    formDiv.classList.add("buyer-form");
+    formDiv.innerHTML = `
+      <h3>Data Pembeli</h3>
+      <label>Nama:<br><input type="text" id="buyer-name" class="input-field"></label><br>
+      <label>No. HP:<br><input type="text" id="buyer-phone" class="input-field"></label><br>
+      <label>Kelas:<br><input type="text" id="buyer-class" class="input-field"></label><br>
+      <label>Upload Bukti Transfer:<br><input type="file" id="buyer-proof" class="input-field" accept="image/*"></label>
+    `;
+    modalBody.appendChild(formDiv);
+
+    cartTotal.textContent = "0";
+    modal.style.display = "block";
+    addCheckboxEvents();
+  });
+});
+
+document.querySelector(".close").addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+function addCheckboxEvents() {
+  const checkboxes = modal.querySelectorAll(".menu-checkbox");
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener("change", () => {
+      let total = 0;
+      checkboxes.forEach(item => {
+        if (item.checked) total += parseInt(item.dataset.price);
+      });
+      cartTotal.textContent = total.toLocaleString("id-ID");
+    });
+  });
+}
+
+// tombol checkout
+checkoutBtn.addEventListener("click", () => {
+  const checkboxes = modal.querySelectorAll(".menu-checkbox:checked");
+  if (checkboxes.length === 0) {
+    alert("Pilih dulu menu yang ingin dipesan 🍱");
+    return;
+  }
+
+  const name = document.getElementById("buyer-name").value.trim();
+  const phone = document.getElementById("buyer-phone").value.trim();
+  const kelas = document.getElementById("buyer-class").value.trim();
+  const proof = document.getElementById("buyer-proof").files[0];
+
+  if (!name || !phone || !kelas) {
+    alert("Lengkapi semua data pembeli terlebih dahulu!");
+    return;
+  }
+
+  if (!proof) {
+    alert("Harap upload bukti transfer sebelum checkout.");
+    return;
+  }
+
+  // buat pesan WhatsApp
+  let orderedItems = [];
+  let total = 0;
+
+  checkboxes.forEach(item => {
+    const itemName = item.dataset.name;
+    const price = parseInt(item.dataset.price);
+    orderedItems.push(`• ${itemName} - Rp ${price.toLocaleString('id-ID')}`);
+    total += price;
+  });
+
+  const message = `Halo, saya ingin memesan di ${modalTitle.textContent}:\n\n${orderedItems.join("\n")}\n\nTotal: Rp ${total.toLocaleString('id-ID')}\n\nNama: ${name}\nNo. HP: ${phone}\nKelas: ${kelas}\n\n(Bukti transfer akan saya kirim, mohon dicek ya!)`;
+  const waLink = `https://wa.me/${currentStore.phone}?text=${encodeURIComponent(message)}`;
+  window.open(waLink, "_blank");
+});
+</script>
+
+
+
+        <!-- Testimonials section -->
+          <section class="testimonials-section" id="testimonials-section">
+            <h2 class="section-title">Testimoni</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonial swiper-slide">
+                                <img src="caca.jpg" alt="user" class="user-image">
+                                <h3 class="name">caca marica</h3>
+                                <i class="feedback">menyukai semua menu kantin. aku akan memesannya kembali!  <i class="fas fa-heart"></i></i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="dina.jpg" alt="user" class="user-image">
+                                <h3 class="name">dina nemo biru</h3>
+                                <i class="feedback">ayam geprek enak sekali !! aku suka </i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="susanti.jpg" alt="user" class="user-image">
+                                <h3 class="name">picaa</h3>
+                                <i class="feedback">kerenn..semogaa lancarr digunakann</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="meimei.jpg" alt="user" class="user-image">
+                                <h3 class="name">naboluu</h3>
+                                <i class="feedback">iihh baguss..kerenn websitenyaa<i class="fas fa-heart"></i></i>
+                            </li>
+                        </ul>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+          </section>
+        
+        <!-- Contact section -->
+          <section class="contact-section" id="contact-section">
+            <h2 class="section-title">Kontak Kami</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Kantin - SMA Islam Athirah Bukit Baruga</p>
+                    </li>
+
+                    <li class="contact-info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>www.smaathirahbaruga.sch.id</p>
+                    </li>
+
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(+62) 44200088</p>
+                    </li>
+
+                    <li class="contact-info">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>(Open) Senin - Jumat : 10.20 AM - 13.20 PM</p>
+                    </li>
+
+                </ul>
+
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Nama Kamu" class="form-input" required>
+                    <input type="email" placeholder="Email Kamu" class="form-input" required>
+                    <textarea placeholder="Pesan Kamu" class="form-input" required></textarea>
+                    <button class="submit-button">Submit</button>
+                </form>
+            </div>
+          </section>
+
+        <!-- Footer section -->
+          <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text"> @ 2025 Pesan Yuk! </p>
+                
+                <div class="social-link-list">
+                    <a href="https://www.instagram.com/chizz.snack/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p class="policy-text">
+                    <a href="" class="policy-link">Prifacy Policy</a>
+                    <span class="separator">•</span>
+                    <a href="" class="policy-link">Refund Policy</a>
+                </p>
+            </div>
+          </footer>
+
+    </main>
+
+    <!-- Lingking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Lingking Custom ccript -->
+    <script src="script.js"></script>
+</body>
+</html>
